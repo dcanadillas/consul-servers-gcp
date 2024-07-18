@@ -53,6 +53,9 @@ Image for Consul
       "owner" = "${var.owner}",
       "platform" = "hashicorp",
     }
+    build_labels = {
+      "consul_version" = "${var.consul_version}"
+    }
   }
   sources = ["sources.googlecompute.consul"]
   provisioner "shell" {

@@ -38,12 +38,12 @@ EOF
 
 
 ```
-packer build -var-file ./packer/gcp/consul_gcp.auto.pkvars.hcl ./packer/gcp/consul_gcp.pkr.hcl
+packer build -var-file ./packer/gcp/consul_gcp.auto.pkrvars.hcl ./packer/gcp/consul_gcp.pkr.hcl
 ```
 
 > NOTE: You can use [HCP Packer](https://developer.hashicorp.com/hcp/docs/packer) by selecting the `./packer/gcp/consul_gcp_hcp.pkr.hcl` template instead of the one used in the command:
 > ```
-> packer build -var-file ./packer/gcp/consul_gcp.auto.pkvars.hcl ./packer/gcp/consul_gcp_hcp.pkr.hcl
+> packer build -var-file ./packer/gcp/consul_gcp.auto.pkrvars.hcl ./packer/gcp/consul_gcp_hcp.pkr.hcl
 > ```
 >
 > Bear in mind that you will need to configure your HCP environment variable credentials (*HCP_CLIENT_ID* and *HCP_CLIENT_SECRET*)

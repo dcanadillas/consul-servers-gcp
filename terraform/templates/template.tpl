@@ -84,6 +84,8 @@ verify_server_hostname = false
 retry_join = ["provider=gce project_name=${gcp_project} tag_value=${tag} zone_pattern=\"${region}-.*\""]
 license_path = "$CONSUL_DIR/license.hclic"
 
+leave_on_terminate = true
+
 auto_encrypt {
   allow_tls = true
 }
